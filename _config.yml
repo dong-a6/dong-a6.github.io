@@ -1,8 +1,8 @@
 title: Dong A Restaurant - Finest Asian Cuisine
 email: github.com/donga-cuisine
 description: > # this means to ignore newlines until "baseurl:"
-"Die hohe Kunst erstklassiger asiatischer Kochkunst - im Gourmetrestaurant Dong A im KPM Hotel & Residences
-ist sie erlebbar"
+  "Die hohe Kunst erstklassiger asiatischer Kochkunst - im Gourmetrestaurant Dong A im KPM Hotel & Residences
+  ist sie erlebbar"
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "//donga-cuisine.github.io" # the base hostname & protocol for your site
 github_username:  donga-cuisine
