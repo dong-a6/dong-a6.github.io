@@ -118,12 +118,35 @@
         .top-right-2-column{grid-area:top-right-2-column;}
         .bottom-left{grid-area:bottom-left;}
         .bottom-right{grid-area:bottom-right;}
-        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-            .da-grid-container{display:none;}
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 5px;
         }
-        footer .uk-section-default{background-color:rgba(230, 231, 232, .2);}
-        @media only screen and (min-width:960px) {
-            .uk-h2, h2 {font-size:2rem;}
+        .gallery img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            border-radius: 0px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-item {
+            flex: 1 1 calc(33.333% - 40px);
+            box-sizing: border-box;
+            padding: 5px;
+        }
+        @media (max-width: 768px) {
+            .gallery-item {
+                flex: 1 1 calc(50% - 40px);
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery-item {
+                flex: 1 1 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -182,26 +205,65 @@
 
 <p>Lassen Sie sich von den <strong>Konditoreiwaren</strong> aus dem nordindischen <strong>Rajasthan</strong> verwöhnen, wo der Duft der indischen Gewürze auf die Süße des traditionellen Gebäcks trifft und eine Symphonie von Aromen kreiert, die auf Ihrem Gaumen tanzen.</p>
 
-<p><img src="https://donga-cuisine.github.io/pics/10-raja.jpg" alt="Rajasthan" />
-<img src="https://donga-cuisine.github.io/pics/11-jaipur.jpg" alt="Jaipur" /></p>
+                        <div class="gallery">
+        <div class="gallery-item uk-inline-clip uk-transition-toggle">
+            <a href="https://donga-cuisine.github.io/pics/10-raja.jpg"><img class="uk-transition-scale-up uk-transition-opaque" src="https://donga-cuisine.github.io/pics/10-raja.jpg" alt="" data-caption="">
+            </a>
+        </div>
+               <div class="gallery-item uk-inline-clip uk-transition-toggle">
+            <a href="https://donga-cuisine.github.io/pics/11-jaipur.jpg"><img class="uk-transition-scale-up uk-transition-opaque" src="https://donga-cuisine.github.io/pics/11-jaipur.jpg" alt="" data-caption="">
+            </a>
+        </div>    </div>
 
 <p>Genießen Sie auch unsere <strong>Waffeln nach holländischer Art</strong>, die Sie mit ihrer Knusprigkeit und einem Hauch von Karamell direkt in ein <strong>Café an den Kanälen von Amsterdam</strong> transportieren.</p>
 
-<p><img src="https://donga-cuisine.github.io/pics/20-waffel.jpg" alt="Waffel" />
-<img src="https://donga-cuisine.github.io/pics/21-amsterdam.jpeg" alt="Canal" /></p>
+                                        <div class="gallery">
+                <div class="gallery-item uk-inline-clip uk-transition-toggle" tabindex="0">
+                    <a href="https://donga-cuisine.github.io/pics/20-waffel.jpg"><img class="uk-transition-scale-up uk-transition-opaque" src="https://donga-cuisine.github.io/pics/20-waffel.jpg" alt="" data-caption=""></a>
+                </div>
+
+
+                <div class="gallery-item uk-inline-clip uk-transition-toggle" tabindex="1">
+                    <a href="https://donga-cuisine.github.io/pics/21-amsterdam.jpeg"><img class="uk-transition-scale-up uk-transition-opaque" src="https://donga-cuisine.github.io/pics/21-amsterdam.jpeg" alt="" data-caption=""></a>
+                </div>
+            </div>
+
 
 <p>Erleben Sie die Freude an <strong>süßen Tapas aus Madrid</strong>, mit klassischen Leckereien wie <strong>heißer Schokolade und Churros</strong>, die sich perfekt zum Teilen eignen und das pulsierende spanische Flair hervorrufen.</p>
 
-<p><img src="https://donga-cuisine.github.io/pics/30-churros.jpg" alt="Churros" />
-<img src="https://donga-cuisine.github.io/pics/31-palacio_real.jpg" alt="Palacio-Real" /></p>
+                                    <div class="gallery">
+                <div class="gallery-item uk-inline-clip uk-transition-toggle" tabindex="0">
+                    <a href="https://donga-cuisine.github.io/pics/30-churros.jpg"><img class="uk-transition-scale-up uk-transition-opaque" src="https://donga-cuisine.github.io/pics/30-churros.jpg" alt="" data-caption=""></a>
+                </div>
+
+                <div class="gallery-item uk-inline-clip uk-transition-toggle" tabindex="1">
+                    <a href="https://donga-cuisine.github.io/pics/31-palacio_real.jpg"><img class="uk-transition-scale-up uk-transition-opaque" src="https://donga-cuisine.github.io/pics/31-palacio_real.jpg" alt="" data-caption=""></a>
+                </div>
+
+                    </div>
 
 <p>Jedes Dessert wird sorgfältig mit frischen Zutaten der besten lokalen Erzeuger zubereitet. Hierzu zählt die <strong>Minze</strong> aus dem üppigen <strong>Spreewald</strong>, der leicht säuerliche <strong>Rhabarber</strong> aus <strong>Sachsen</strong>,
 die süßen Noten im <strong>Riesling</strong> unserer vertrauten <strong>rheinischen Winzer</strong> und sogar eine Prise <strong>Meersalz</strong> aus der deutschen <strong>Nordseeküste</strong>.</p>
 
-<p><img src="https://donga-cuisine.github.io/pics/40-spreewald.jpg" alt="Spreewald" />
-<img src="https://donga-cuisine.github.io/pics/41-sachsen.jpg" alt="Sachsen" />
-<img src="https://donga-cuisine.github.io/pics/42-drachenfels_jochen-tack_.jpg" alt="Drachenfels" />
-<img src="https://donga-cuisine.github.io/pics/43-nordsee.jpg" alt="Nordsee" /></p>
+
+                            <div class="gallery">
+                <div class="gallery-item uk-inline-clip uk-transition-toggle" tabindex="0">
+                    <a href="https://donga-cuisine.github.io/pics/40-spreewald.jpg"><img class="uk-transition-scale-up uk-transition-opaque" src="https://donga-cuisine.github.io/pics/40-spreewald.jpg" alt="" data-caption=""></a>
+                </div>
+
+                <div class="gallery-item uk-inline-clip uk-transition-toggle" tabindex="1">
+                    <a href="https://donga-cuisine.github.io/pics/41-sachsen.jpg"><img class="uk-transition-scale-up uk-transition-opaque" src="https://donga-cuisine.github.io/pics/41-sachsen.jpg" alt="" data-caption=""></a>
+                </div>
+
+                                                            <div class="gallery-item uk-inline-clip uk-transition-toggle" tabindex="1">
+                    <a href="https://donga-cuisine.github.io/pics/42-drachenfels_jochen-tack_.jpg"><img class="uk-transition-scale-up uk-transition-opaque" src="https://donga-cuisine.github.io/pics/42-drachenfels_jochen-tack_.jpg" alt="" data-caption=""></a>
+                </div>
+                                
+                <div class="gallery-item uk-inline-clip uk-transition-toggle" tabindex="1">
+                    <a href="https://donga-cuisine.github.io/pics/43-nordsee.jpg"><img class="uk-transition-scale-up uk-transition-opaque" src="https://donga-cuisine.github.io/pics/43-nordsee.jpg" alt="" data-caption=""></a>
+                </div>
+
+                                </div>
 
 <p>Tatsächlich bietet uns die ganze Erde ein süßes Leben voller Genuss und Liebe, <strong>Elisabeth</strong>. Aber Du weißt auch, dass die <strong>Liebe</strong> unsere Erde transzendiert. Als <strong>Christin</strong> stehst Du vor der Aufgabe, eine <strong>Berufung</strong> zu finden,
 die <strong>Gottes himmlische Liebe</strong> in unserem weltlichen Leben widerspiegelt. Dein Freund <strong>Rodrigo</strong>, der Dich wahnsinnig liebt, ist davon überzeugt, dass es seine Berufung ist,
